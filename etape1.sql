@@ -1,3 +1,6 @@
+CREATE DATABASE Ecole;
+
+
 CREATE TABLE etudiants (
     student_id SERIAL PRIMARY KEY,              
     prenom VARCHAR(50) NOT NULL,                
@@ -32,7 +35,6 @@ VALUES (1, 'Jonas', 'Salk', NULL, 'Biologie', NULL, 'jsalk@school.org', '777-555
 
 
 
--- Insertion de 20 étudiants
 INSERT INTO étudiants (student_id, prenom, nom, numero_salle, telephone, email, annee_obtention, numero_classe)
 VALUES
     (2, 'Anna', 'Smith', 102, '777-555-1235', 'anna.smith@ecole.org', 2036, 1),
@@ -55,7 +57,6 @@ VALUES
     (19, 'Alexander', 'Wright', 119, '777-555-1252', 'alexander.wright@ecole.org', 2035, 3),
     (20, 'Ava', 'Lopez', 120, '777-555-1253', 'ava.lopez@ecole.org', 2036, 1);
 
--- Insertion de 5 enseignants
 INSERT INTO enseignants (teacher_id, prenom, nom, numero_salle, departement, annee_obtention, email, telephone, numero_classe)
 VALUES
     (1, 'Alice', 'Dupont', 101, 'Mathématiques', 2020, 'alice.dupont@ecole.org', '777-555-0001', 1),
